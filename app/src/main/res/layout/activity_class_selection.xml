@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/gridLayout"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:columnCount="4"
-    android:rowCount="4">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-        <Button
-            android:id="@+id/confirmClassesButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Confirm Classes"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp" />
+        <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4">
 
         <Button
             style="@style/ClassSelectionButton"
@@ -112,3 +110,11 @@
 
     </GridLayout>
 
+<Button
+android:id="@+id/confirmClassesButton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Confirm Classes"
+android:layout_gravity="center_horizontal"
+android:layout_marginTop="16dp" />
+</LinearLayout>

@@ -6,9 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.HashMap;
+
 public class StatsActivity extends AppCompatActivity {
 
-    // ...
+    private final HashMap<String, Integer> stats = new HashMap<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +24,18 @@ public class StatsActivity extends AppCompatActivity {
 
         setupUI();
     }
-
+    private void initDefaultStats() {
+        stats.put("MaxHP", 5);
+        stats.put("CurrentHP", 5);
+        stats.put("Might", 5);
+        stats.put("Intuition", 5);
+        stats.put("Agility", 1);
+        stats.put("Precision", 1);
+        stats.put("Tactics", 3);
+        stats.put("Introspection", 0);
+        stats.put("PhysicalResistance", 0);
+        stats.put("MagicalResistance", 0);
+    }
     private void setupUI() {
         for (String stat : stats.keySet()) {
             // Find UI elements by ID

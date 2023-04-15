@@ -1,25 +1,39 @@
 package com.example.charactersheet;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.core.content.ContextCompat;
+
+import java.util.ArrayList;
 
 public class ClassSelectionActivity extends BaseActivity {
     private Button firstSelectedButton;
     private Button secondSelectedButton;
     private Drawable firstButtonOriginalBackground;
     private Drawable secondButtonOriginalBackground;
+    private ArrayList<String> selectedClasses = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_selection);
+
+        Button confirmClassesButton = findViewById(R.id.confirmClassesButton);
+        confirmClassesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                proceedToStats();
+            }
+        });
     }
+
     private void proceedToStats() {
-        if (selectedClasses.size() == 2) {
+        if (firstSelectedButton != null && secondSelectedButton != null) {
             Intent intent = new Intent(ClassSelectionActivity.this, StatsActivity.class);
             intent.putStringArrayListExtra("selectedClasses", selectedClasses);
             startActivity(intent);
@@ -54,12 +68,5 @@ public class ClassSelectionActivity extends BaseActivity {
             secondSelectedButton = null;
             secondButtonOriginalBackground = null;
         }
-        Button confirmClassesButton = findViewById(R.id.confirmClassesButton);
-        confirmClassesButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                proceedToStats();
-            }
-        });
     }
 }

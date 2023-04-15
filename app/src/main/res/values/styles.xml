@@ -14,7 +14,7 @@
     <style name="ClassSelectionButton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">60dp</item>
-        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_margin">1dp</item>
         <item name="android:layout_columnWeight">1</item>
         <item name="android:layout_rowWeight">1</item>
         <item name="android:textAppearance">@style/ClassSelectionButtonTextAppearance</item>
