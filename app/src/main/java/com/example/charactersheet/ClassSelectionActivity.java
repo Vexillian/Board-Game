@@ -18,6 +18,15 @@ public class ClassSelectionActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_selection);
     }
+    private void proceedToStats() {
+        if (selectedClasses.size() == 2) {
+            Intent intent = new Intent(ClassSelectionActivity.this, StatsActivity.class);
+            intent.putStringArrayListExtra("selectedClasses", selectedClasses);
+            startActivity(intent);
+        } else {
+            Toast.makeText(ClassSelectionActivity.this, "Please select two classes", Toast.LENGTH_SHORT).show();
+        }
+    }
 
     public void onButtonClicked(View view) {
         Button clickedButton = (Button) view;
@@ -45,5 +54,12 @@ public class ClassSelectionActivity extends BaseActivity {
             secondSelectedButton = null;
             secondButtonOriginalBackground = null;
         }
+        Button confirmClassesButton = findViewById(R.id.confirmClassesButton);
+        confirmClassesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                proceedToStats();
+            }
+        });
     }
 }

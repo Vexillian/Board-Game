@@ -7,6 +7,14 @@
     android:rowCount="4">
 
         <Button
+            android:id="@+id/confirmClassesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Classes"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <Button
             style="@style/ClassSelectionButton"
             android:id="@+id/alchemistButton"
             android:text="@string/alchemist"
