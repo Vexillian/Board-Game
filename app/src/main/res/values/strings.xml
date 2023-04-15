@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CharacterSheet</string>
+    <!-- Class names -->
+    <string name="alchemist">Alchemist</string>
+    <string name="barbarian">Barbarian</string>
+    <string name="battle_mage">Battle Mage</string>
+    <string name="cleric">Cleric</string>
+    <string name="conjurer">Conjurer</string>
+    <string name="controller">Controller</string>
+    <string name="druid">Druid</string>
+    <string name="dualist">Dualist</string>
+    <string name="gambler">Gambler</string>
+    <string name="illusionist">Illusionist</string>
+    <string name="necromancer">Necromancer</string>
+    <string name="ninja">Ninja</string>
+    <string name="paladin">Paladin</string>
+    <string name="ranger">Ranger</string>
+    <string name="seer">Seer</string>
+    <string name="trap_specialist">Trap Specialist</string>
+    <string name="create_new_character">Create New Character</string>
+    <string name="load_character">Load Character</string>
+
+</resources>

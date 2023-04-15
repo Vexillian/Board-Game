@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ClassSelectionButtonTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <style name="ClassSelectionButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:textAppearance">@style/ClassSelectionButtonTextAppearance</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+    </style>
+
+
+    <style name="MainScreenButton">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">8sp</item>
+        <item name="android:autoSizeMaxTextSize">18sp</item>
+        <item name="android:autoSizeStepGranularity">2sp</item>
+    </style>
+
+</resources>
