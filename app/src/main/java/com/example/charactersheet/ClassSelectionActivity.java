@@ -16,7 +16,7 @@ public class ClassSelectionActivity extends BaseActivity {
     private Button secondSelectedButton;
     private Drawable firstButtonOriginalBackground;
     private Drawable secondButtonOriginalBackground;
-    private ArrayList<String> selectedClasses = new ArrayList<>();
+    private final ArrayList<String> selectedClasses = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +24,7 @@ public class ClassSelectionActivity extends BaseActivity {
         setContentView(R.layout.activity_class_selection);
 
         Button confirmClassesButton = findViewById(R.id.confirmClassesButton);
-        confirmClassesButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                proceedToStats();
-            }
-        });
+        confirmClassesButton.setOnClickListener(view -> proceedToStats());
     }
 
     private void proceedToStats() {
