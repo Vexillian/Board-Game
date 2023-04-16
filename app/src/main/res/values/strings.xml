@@ -1,4 +1,7 @@
 <resources>
+    <string name="create_new_character">Create New Character</string>
+    <string name="load_character">Load Character</string>
+    <string name="title_activity_stats">Stats Activity</string>
     <string name="app_name">CharacterSheet</string>
     <!-- Class names -->
     <string name="alchemist">Alchemist</string>
@@ -11,13 +14,22 @@
     <string name="dualist">Dualist</string>
     <string name="gambler">Gambler</string>
     <string name="illusionist">Illusionist</string>
-    <string name="necromancer">Necromancer</string>
+    <string name="necromancer">Necro</string>
     <string name="ninja">Ninja</string>
     <string name="paladin">Paladin</string>
     <string name="ranger">Ranger</string>
     <string name="seer">Seer</string>
     <string name="trap_specialist">Trap Specialist</string>
-    <string name="create_new_character">Create New Character</string>
-    <string name="load_character">Load Character</string>
+    <!-- Stat labels -->
+    <string name="max_hp">Max HP</string>
+    <string name="current_hp">Current HP</string>
+    <string name="might">Might</string>
+    <string name="intuition">Intuition</string>
+    <string name="agility">Agility</string>
+    <string name="precision">Precision</string>
+    <string name="tactics">Tactics</string>
+    <string name="introspection">Introspection</string>
+    <string name="physical_resistance">Physical Resistance</string>
+    <string name="magical_resistance">Magical Resistance</string>
 
 </resources>

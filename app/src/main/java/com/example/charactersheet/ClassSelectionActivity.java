@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import com.google.android.material.button.MaterialButton;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -12,8 +13,8 @@ import androidx.core.content.ContextCompat;
 import java.util.ArrayList;
 
 public class ClassSelectionActivity extends BaseActivity {
-    private Button firstSelectedButton;
-    private Button secondSelectedButton;
+    private MaterialButton firstSelectedButton;
+    private MaterialButton secondSelectedButton;
     private Drawable firstButtonOriginalBackground;
     private Drawable secondButtonOriginalBackground;
     private final ArrayList<String> selectedClasses = new ArrayList<>();
@@ -38,7 +39,7 @@ public class ClassSelectionActivity extends BaseActivity {
     }
 
     public void onButtonClicked(View view) {
-        Button clickedButton = (Button) view;
+        MaterialButton clickedButton = (MaterialButton) view;
         int primaryColor = ThemeUtils.obtainColorPrimary(this);
         int orangeColor = ContextCompat.getColor(this, R.color.orange);
 

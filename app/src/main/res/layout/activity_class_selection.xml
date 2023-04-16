@@ -6,115 +6,115 @@
     android:padding="16dp">
 
         <GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="4"
-        android:rowCount="4">
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="4">
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/alchemistButton"
+                    android:text="@string/alchemist"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/barbarianButton"
+                    android:text="@string/barbarian"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/battleMageButton"
+                    android:text="@string/battle_mage"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/clericButton"
+                    android:text="@string/cleric"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/conjurerButton"
+                    android:text="@string/conjurer"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/controllerButton"
+                    android:text="@string/controller"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/druidButton"
+                    android:text="@string/druid"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/dualistButton"
+                    android:text="@string/dualist"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/gamblerButton"
+                    android:text="@string/gambler"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/illusionistButton"
+                    android:text="@string/illusionist"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/necromancerButton"
+                    android:text="@string/necromancer"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/ninjaButton"
+                    android:text="@string/ninja"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/paladinButton"
+                    android:text="@string/paladin"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/rangerButton"
+                    android:text="@string/ranger"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/seerButton"
+                    android:text="@string/seer"
+                    android:onClick="onButtonClicked" />
+
+                <Button
+                    style="@style/ClassSelectionButton"
+                    android:id="@+id/trapSpecialistButton"
+                    android:text="@string/trap_specialist"
+                    android:onClick="onButtonClicked" />
+
+        </GridLayout>
 
         <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/alchemistButton"
-            android:text="@string/alchemist"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/barbarianButton"
-            android:text="@string/barbarian"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/battleMageButton"
-            android:text="@string/battle_mage"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/clericButton"
-            android:text="@string/cleric"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/conjurerButton"
-            android:text="@string/conjurer"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/controllerButton"
-            android:text="@string/controller"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/druidButton"
-            android:text="@string/druid"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/dualistButton"
-            android:text="@string/dualist"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/gamblerButton"
-            android:text="@string/gambler"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/illusionistButton"
-            android:text="@string/illusionist"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/necromancerButton"
-            android:text="@string/necromancer"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/ninjaButton"
-            android:text="@string/ninja"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/paladinButton"
-            android:text="@string/paladin"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/rangerButton"
-            android:text="@string/ranger"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/seerButton"
-            android:text="@string/seer"
-            android:onClick="onButtonClicked" />
-
-        <Button
-            style="@style/ClassSelectionButton"
-            android:id="@+id/trapSpecialistButton"
-            android:text="@string/trap_specialist"
-            android:onClick="onButtonClicked" />
-
-    </GridLayout>
-
-<Button
-android:id="@+id/confirmClassesButton"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="Confirm Classes"
-android:layout_gravity="center_horizontal"
-android:layout_marginTop="16dp" />
+            android:id="@+id/confirmClassesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Classes"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
 </LinearLayout>
