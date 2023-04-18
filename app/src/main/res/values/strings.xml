@@ -31,5 +31,20 @@
     <string name="introspection">Introspection</string>
     <string name="physical_resistance">Physical Resistance</string>
     <string name="magical_resistance">Magical Resistance</string>
+    <string name="character_level">Level</string>
+    <string name="essence_points">Essence Points</string>
+    <string name="exp">Exp</string>
+
+    <string-array name="modifiers">
+        <item>Hearty</item>
+        <item>Modifier 2</item>
+        <item>Modifier 3</item>
+    </string-array>
+
+    <string-array name="enemies">
+        <item>Wolf</item>
+        <item>Enemy 2</item>
+        <item>Enemy 3</item>
+    </string-array>
 
 </resources>

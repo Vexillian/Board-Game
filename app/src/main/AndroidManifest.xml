@@ -15,11 +15,16 @@
         <activity
             android:name=".ClassSelectionActivity"
             android:label="Class Selection" />
-
         <activity
-            android:name=".StatsActivity"
-            android:label="@string/title_activity_stats">
+            android:name=".ClassDetailsActivity"
+            android:screenOrientation="portrait"
+            android:label="ClassDetailsActivity"
+            android:parentActivityName=".ClassSelectionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ClassSelectionActivity" />
         </activity>
+
 
         <activity
             android:name=".MainActivity"
