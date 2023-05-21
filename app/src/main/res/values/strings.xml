@@ -31,5 +31,82 @@
     <string name="introspection">Introspection</string>
     <string name="physical_resistance">Physical Resistance</string>
     <string name="magical_resistance">Magical Resistance</string>
+    <string name="character_level">Level</string>
+    <string name="essence_points">Essence Points</string>
+    <string name="exp">Exp</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="enemy_name">Name</string>
+    <string name="hp">Health</string>
+    <string name="phys_resistance">Physical Res</string>
+    <string name="mag_resistance">Magical Res</string>
+    <string name="enable_free_ep_buttons">Enable Free EP Buttons</string>
+    <string name="zone">Zone</string>
+    <string name="craft_armor">Craft Armor</string>
+    <string name="craft_weapon">Craft Weapon</string>
+    <string name="enemy_defeated">Enemy Defeated</string>
+    <string name="enemy_hp">Enemy HP</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+
+    <string-array name="modifiers">
+        <item>None</item>
+        <item>Acidic</item>
+        <item>Agile</item>
+        <item>Aggressive</item>
+        <item>Arctic</item>
+        <item>Bladed</item>
+        <item>Cunning</item>
+        <item>Cowering</item>
+        <item>Earthen</item>
+        <item>Electrified</item>
+        <item>Fiery</item>
+        <item>Flaying</item>
+        <item>Ghostly</item>
+        <item>Greedy</item>
+        <item>Hearty</item>
+        <item>Impervious</item>
+        <item>Intelligent</item>
+        <item>Lively</item>
+        <item>Noxious</item>
+        <item>Percipient</item>
+        <item>Perceptive</item>
+        <item>Piercing</item>
+        <item>Plump</item>
+        <item>Pustulating</item>
+        <item>Reinforced</item>
+        <item>Robust</item>
+        <item>Shielded</item>
+        <item>Shelled</item>
+        <item>Translucent</item>
+        <item>Tranquil</item>
+        <item>Vampiric</item>
+        <item>Venomous</item>
+        <item>Vigorous</item>
+        <item>Wind Walking</item>
+
+
+    </string-array>
+
+    <string-array name="enemies">
+        <item>None</item>
+        <item>Arachnid</item>
+        <item>Bandit</item>
+        <item>Corrupted Imp</item>
+        <item>Flock of Ravens</item>
+        <item>Man-Eating Plant</item>
+        <item>Mud Golem</item>
+        <item>Mystic Bedlamite</item>
+        <item>Scorpion</item>
+        <item>Undine</item>
+        <item>Vampire Bat</item>
+        <item>Wolf</item>
+        <item>Worm</item>
+
+    </string-array>
+
+
 
 </resources>

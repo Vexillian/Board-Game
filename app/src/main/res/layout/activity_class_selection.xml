@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -117,4 +118,118 @@
             android:text="Confirm Classes"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/classSummary1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/classSummary2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:padding="0dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/classStatsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:dividerPadding="0dp">
+
+                <!-- First LinearLayout -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp">
+
+                        <TextView
+                            android:id="@+id/className1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@id/classStats1"
+                            app:layout_constraintStart_toStartOf="@id/classStats1"
+                            app:layout_constraintBottom_toTopOf="@id/classStats1" />
+
+                        <TextView
+                            android:id="@+id/classStats1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="1dp"
+                            android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Second LinearLayout -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp">
+
+                        <TextView
+                            android:id="@+id/className2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@id/classStats2"
+                            app:layout_constraintStart_toStartOf="@id/classStats2"
+                            app:layout_constraintBottom_toTopOf="@id/classStats2" />
+
+                        <TextView
+                            android:id="@+id/classStats2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="1dp"
+                            android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Third LinearLayout -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp">
+
+                        <TextView
+                            android:id="@+id/totalLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total"
+                            android:visibility="gone"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@id/totalClassStats"
+                            app:layout_constraintStart_toStartOf="@id/totalClassStats"
+                            app:layout_constraintBottom_toTopOf="@id/totalClassStats" />
+
+                        <TextView
+                            android:id="@+id/totalClassStats"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="1dp"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+                </LinearLayout>
+
+        </LinearLayout>
+
+
 </LinearLayout>

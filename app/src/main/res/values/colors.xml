@@ -11,6 +11,15 @@
     <color name="orange">#FFA500</color>
     <color name="transparent">#00000000</color>
     <color name="green">#4CAF50</color>
+    <color name="tabSelectedTextColor">#000000</color>
+    <color name="tabUnselectedTextColor">#FFFFFF</color>
+    <color name="tableRowColor1">#3f4242</color>
+    <color name="tableRowColor2">#4e5151</color>
+    <color name="tableRowBackgroundColor">#ACFABA</color>
+    <color name="red">#FF0000</color>
+    <color name="lightBlue">#7ff3ed</color>
+    <color name="blue">#3C2DFD</color>
+    <color name="purple">#8921DE</color>
 
 
 </resources>
