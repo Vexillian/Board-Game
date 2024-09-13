@@ -54,6 +54,11 @@
     <string name="roll_a_d6_and_select_your_result">Roll a D6 and select your result</string>
     <string name="_5">5</string>
     <string name="_6">6</string>
+    <string name="activity_title_format">%1$s / %2$s</string>
+    <string name="class_name_format">(%1$s)</string>
+    <string name="confirm_class">Confirm Class</string>
+    <string name="total">Total</string>
+
 
     <string-array name="modifiers">
         <item>None</item>

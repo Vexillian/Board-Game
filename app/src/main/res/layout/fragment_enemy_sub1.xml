@@ -136,7 +136,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/craft_weapon"
                     android:textColor="@color/black"
-                    tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+                    tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/weapon_stats_text_view"
@@ -164,7 +164,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/craft_armor"
                     android:textColor="@color/black"
-                    tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+                    tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/armor_stats_text_view"

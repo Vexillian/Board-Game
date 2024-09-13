@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -35,7 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="@string/_1" />
+            android:text="@string/_1"
+            tools:ignore="VisualLintButtonSize" />
 
 
         <Button
@@ -44,7 +46,8 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="@string/_2" />
+            android:text="@string/_2"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/button3"
@@ -52,7 +55,8 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="@string/_3" />
+            android:text="@string/_3"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/button4"
@@ -60,7 +64,8 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="@string/_4" />
+            android:text="@string/_4"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/button5"
@@ -68,7 +73,8 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="@string/_5" />
+            android:text="@string/_5"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/button6"
@@ -76,7 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
-            android:text="@string/_6" />
+            android:text="@string/_6"
+            tools:ignore="VisualLintButtonSize" />
 
     </GridLayout>
 

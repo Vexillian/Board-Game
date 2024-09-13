@@ -18,21 +18,22 @@ public class BossModifier extends Modifier {
 
     static final BossModifier[] bossModifiers = {
             new BossModifier("Chaotic", new int[][]{
-                    {0, 0, 0, 0, 0, 0, 0, 10, 0},
-                    {0, 0, 0, 0, 0, 0, 0, 20, 0},
-                    {0, 0, 0, 0, 0, 0, 0, 30, 0},
-                    {0, 0, 0, 0, 0, 0, 0, 0, 0}
+                    {30, 0, 0, 0, 0, 0, 0, 10, 0},
+                    {60, 0, 0, 0, 0, 0, 0, 20, 0},
+                    {90, 0, 0, 0, 0, 0, 0, 30, 0},
+                    {120, 0, 0, 0, 0, 0, 0, 0, 0}
             }, (sharedViewModel, context, selectedZone, enemy) -> {
 
-                sharedViewModel.updateStat("Max HP",1);
-                sharedViewModel.updateStat("Might",1);
-                sharedViewModel.updateStat("Intuition",1);
-                sharedViewModel.updateStat("Agility",1);
-                sharedViewModel.updateStat("Precision",1);
+                sharedViewModel.updateStat("Current HP", 1, true);
+                sharedViewModel.updateStat("Max HP", 1, true);
+                sharedViewModel.updateStat("Might", 1, true);
+                sharedViewModel.updateStat("Intuition", 1, true);
+                sharedViewModel.updateStat("Agility", 1, true);
+                sharedViewModel.updateStat("Precision", 1, true);
 
                 new AlertDialog.Builder(context)
                         .setTitle("Chaotic Boss Defeated!")
-                        .setMessage("+1 Max HP, Might, Intuition, Agility, and Precision.")
+                        .setMessage("+1 Max HP, Might, Intuition, Agility, and Precision! (This may break your limits.)")
                         .setPositiveButton(android.R.string.ok, null)
                         .show();
             }),
@@ -101,17 +102,14 @@ public class BossModifier extends Modifier {
                     {0, 0, 0, 0, 0, 0, 0, 16, 0},
                     {0, 0, 0, 0, 0, 0, 0, 0, 0}
             }, (sharedViewModel, context, selectedZone, enemy) -> {
-
-                sharedViewModel.updateStat("Tactics",1);
-                sharedViewModel.updateStat("Introspection",1);
-
+                sharedViewModel.updateStat("Tactics", 1, true);
+                sharedViewModel.updateStat("Introspection", 1, true);
 
                 new AlertDialog.Builder(context)
                         .setTitle("Gravatic Boss Defeated!")
                         .setMessage("+1 to Tactics and Introspection! (This may break your limits.)")
                         .setPositiveButton(android.R.string.ok, null)
                         .show();
-
             }),
 
             new BossModifier("Hyper Focused", new int[][]{

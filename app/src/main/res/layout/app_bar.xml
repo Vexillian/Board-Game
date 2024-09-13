@@ -23,7 +23,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/enable_stats_buttons_switch"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/zone_label"/>
+            app:layout_constraintEnd_toStartOf="@+id/zone_label"
+            app:layout_constraintWidth_percent="0.5"/>
 
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/enable_stats_buttons_switch"
@@ -40,8 +41,9 @@
             app:layout_constraintTop_toBottomOf="@+id/activity_title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/zone_label"
-            tools:ignore="VisualLintButtonSize" />
+            app:layout_constraintEnd_toEndOf="@+id/activity_title"
+            tools:ignore="VisualLintButtonSize"
+            app:layout_constraintWidth_percent="0.5"/>
 
         <TextView
             android:id="@+id/zone_label"
@@ -53,7 +55,26 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/radio_group"
             app:layout_constraintStart_toEndOf="@+id/activity_title"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toStartOf="@+id/enable_zone_buttons_switch"
+            app:layout_constraintWidth_percent="0.25"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/enable_zone_buttons_switch"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:checked="false"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeMaxTextSize="18sp"
+            app:autoSizeStepGranularity="1sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/radio_group"
+            app:layout_constraintStart_toEndOf="@+id/zone_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="VisualLintButtonSize"
+            app:layout_constraintWidth_percent="0.25"/>
 
         <RadioGroup
             android:id="@+id/radio_group"
@@ -66,7 +87,8 @@
             app:layout_constraintTop_toBottomOf="@+id/zone_label"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/enable_stats_buttons_switch"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.5">
 
             <RadioButton
                 android:id="@+id/zone1Button"
@@ -74,28 +96,32 @@
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:text="@string/_1"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:enabled="false"/>
 
             <RadioButton
                 android:id="@+id/zone2Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_2"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:enabled="false"/>
 
             <RadioButton
                 android:id="@+id/zone3Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_3"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:enabled="false"/>
 
             <RadioButton
                 android:id="@+id/zone4Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_4"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:enabled="false"/>
         </RadioGroup>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </merge>

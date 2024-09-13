@@ -24,9 +24,10 @@ public class CustomPagerAdapter extends FragmentStateAdapter {
             case 2:
                 return new EnemyFragment();
             default:
-                return null;
+                return new Fragment(); // return an empty Fragment instead of null
         }
     }
+
 
     @Override
     public int getItemCount() {

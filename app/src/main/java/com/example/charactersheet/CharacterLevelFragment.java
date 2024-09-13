@@ -65,38 +65,18 @@ public class CharacterLevelFragment extends Fragment implements LifecycleOwner {
         });
 
 
-        // Exp minus button
         Button expMinusButton = view.findViewById(R.id.exp_minus_button);
         expMinusButton.setOnClickListener(v -> {
             if (exp > 0) {
-                exp--;
-                expValueTextView.setText(String.valueOf(exp));
-
-                int newLevel = calculateLevel(exp);
-                if (newLevel != characterLevel) {
-                    characterLevel = newLevel;
-                    levelValueTextView.setText(String.valueOf(characterLevel));
-                }
+                sharedViewModel.addExp(-1); // Notify the sharedViewModel of the change
             }
         });
 
-        // Exp plus button
         Button expPlusButton = view.findViewById(R.id.exp_plus_button);
         expPlusButton.setOnClickListener(v -> {
-            exp++;
-            expValueTextView.setText(String.valueOf(exp));
-
-            int newLevel = calculateLevel(exp);
-            if (newLevel != characterLevel) {
-                characterLevel = newLevel;
-                levelValueTextView.setText(String.valueOf(characterLevel));
-                if (characterLevel > highestLevel) {
-                    highestLevel = characterLevel;
-                    sharedViewModel.updateEssencePoints(5); // Notify the sharedViewModel of the change
-                    showMilestoneDialog(); // Show the milestone dialog here
-                }
-            }
+            sharedViewModel.addExp(1); // Notify the sharedViewModel of the change
         });
+
 
         sharedViewModel.getExp().observe(getViewLifecycleOwner(), expValue -> {
             exp = expValue;

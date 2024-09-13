@@ -1,34 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Peers"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/nearbyDevicesList"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_marginTop="16dp"
+        android:maxHeight="200dp" />
+
+    <TextView
+        android:id="@+id/textViewReceivedMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Received Messages:"
+        android:textSize="16sp"/>
 
     <Button
-        android:id="@+id/newCharacterButtonId"
-        style="@style/MainScreenButton"
-        android:text="@string/create_new_character"
-        android:onClick="onNewCharacterButtonClick"
-        app:layout_constraintBottom_toTopOf="@+id/loadCharacterButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        android:id="@+id/buttonSendTestMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Test Message"
+        android:layout_marginTop="16dp" />
 
     <Button
-        android:id="@+id/loadCharacterButton"
-        style="@style/MainScreenButton"
-        android:text="@string/load_character"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newCharacterButtonId"
-        app:layout_constraintVertical_bias="0.7" />
+        android:id="@+id/buttonGoToBirthdateScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Birthdates"
+        android:layout_marginTop="16dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connected Devices"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/listViewConnectedDevices"
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:layout_marginTop="16dp"
+        android:maxHeight="200dp" />
+
+</LinearLayout>

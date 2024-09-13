@@ -20,6 +20,8 @@
     <color name="lightBlue">#7ff3ed</color>
     <color name="blue">#3C2DFD</color>
     <color name="purple">#8921DE</color>
+    <color name="custom_color">#ffbb86fc</color>
+
 
 
 </resources>

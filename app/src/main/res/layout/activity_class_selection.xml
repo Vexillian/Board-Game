@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -17,97 +18,113 @@
                     style="@style/ClassSelectionButton"
                     android:id="@+id/alchemistButton"
                     android:text="@string/alchemist"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/barbarianButton"
                     android:text="@string/barbarian"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/battleMageButton"
                     android:text="@string/battle_mage"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/clericButton"
                     android:text="@string/cleric"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/conjurerButton"
                     android:text="@string/conjurer"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/controllerButton"
                     android:text="@string/controller"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/druidButton"
                     android:text="@string/druid"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/dualistButton"
                     android:text="@string/dualist"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/gamblerButton"
                     android:text="@string/gambler"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/illusionistButton"
                     android:text="@string/illusionist"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/necromancerButton"
                     android:text="@string/necromancer"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/ninjaButton"
                     android:text="@string/ninja"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/paladinButton"
                     android:text="@string/paladin"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/rangerButton"
                     android:text="@string/ranger"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/seerButton"
                     android:text="@string/seer"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
                 <Button
                     style="@style/ClassSelectionButton"
                     android:id="@+id/trapSpecialistButton"
                     android:text="@string/trap_specialist"
-                    android:onClick="onButtonClicked" />
+                    android:onClick="onButtonClicked"
+                    tools:ignore="VisualLintButtonSize" />
 
         </GridLayout>
 
@@ -115,9 +132,10 @@
             android:id="@+id/confirmClassesButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Confirm Classes"
+            android:text="@string/confirm_class"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/classSummary1"
@@ -141,7 +159,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="3"
-            android:dividerPadding="0dp">
+            android:dividerPadding="0dp"
+            android:baselineAligned="false">
 
                 <!-- First LinearLayout -->
                 <LinearLayout
@@ -213,7 +232,7 @@
                             android:id="@+id/totalLabel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Total"
+                            android:text="@string/total"
                             android:visibility="gone"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="@id/totalClassStats"

@@ -129,6 +129,21 @@ public class EnemyUtil {
             default: return ""; // return an empty string in case of an invalid index
         }
     }
+
+    public static Enemy getEnemyByName(int zone, String name) {
+        for (Enemy enemy : enemies[zone]) {
+            if (enemy.getName().equals(name)) {
+                return enemy;
+            }
+        }
+        for (Boss boss : bosses[zone]) {
+            if (boss.getName().equals(name)) {
+                return boss;
+            }
+        }
+        throw new IllegalArgumentException("Enemy or Boss with the name " + name + " not found in zone " + zone);
+    }
+
     public static int getRatioByStatIndex(int index) {
         switch(index) {
             case 0: // HP
